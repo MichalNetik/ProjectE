@@ -1,10 +1,10 @@
 const BigNumber = require('bignumber.js');
 
 function getSumOfSingleMultiplier(num, multiplier) {
-  const num_over_multiplier = new BigNumber(num).dividedToIntegerBy(multiplier);
-  return num_over_multiplier
+  const numOverMultiplier = new BigNumber(num).dividedToIntegerBy(multiplier);
+  return numOverMultiplier
     .multipliedBy(multiplier)
-    .multipliedBy(num_over_multiplier.plus(1))
+    .multipliedBy(numOverMultiplier.plus(1))
     .dividedToIntegerBy(2);
 }
 
