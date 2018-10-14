@@ -4,7 +4,7 @@ def get_sum_of_single_multiplier(num: int, multiplier: int):
     Formula & explanation: https://www.mathsisfun.com/algebra/sequences-sums-arithmetic.html
     """
     num_over_multiplier = num // multiplier
-    return multiplier * num_over_multiplier  *  (num_over_multiplier + 1) // 2
+    return multiplier * num_over_multiplier * (num_over_multiplier + 1) // 2
 
 def get_multiplies_sum(num: int):
     """

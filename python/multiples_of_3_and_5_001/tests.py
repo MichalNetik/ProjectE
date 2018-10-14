@@ -26,3 +26,9 @@ class GetMultiplesSumTests(unittest.TestCase):
         num = 100000
         result = get_multiplies_sum(num)
         self.assertEqual(result, 2333316668)
+
+    @timer
+    def test_get_multiplies_sum_10000000(self):
+        num = 10000000
+        result = get_multiplies_sum(num)
+        self.assertEqual(result, 23333331666668)
